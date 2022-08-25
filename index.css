@@ -1,0 +1,457 @@
+/* 文字コードはUTF-8 */
+/* 共通=============== */
+body {
+  font-family:"游ゴシック Medium",YuGothic,YuGothicM,"Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro",メイリオ,Meiryo,sans-serif;
+  background-color: #eee;
+}
+/* ===============共通 */
+
+/* 作業エリア=============== */
+
+body{
+  min-width: 1040px;
+  height: 100%;
+  background:#ffffff;
+  font-size: 15px;
+  color: #333333;
+}
+
+header {
+  height: 70px;
+  width: 100%;
+  padding: 0px 15px;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  display: flex;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 0.06em;
+  padding-top: 4px;
+}
+
+nav {
+  margin:0 0 0 auto;
+  letter-spacing: 0.06em;
+  padding-right: 35px;
+  padding-top: 4px;
+}
+
+ul{
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a{
+  color: #333333;
+  text-decoration: none;
+  display: block;
+  line-height: 60px;
+  padding: 0 20px;
+  
+}
+
+.sm {
+  display: none;
+}
+
+.logo img{
+  width:100%;
+  height:auto;
+}
+
+.pc_back img{
+  width: 100%;
+  padding-top: 60px;
+  display: block;
+}
+
+.sp_back img{
+  width: 100%;
+  padding-top: 60px;
+  display: none;
+}
+
+h1{
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-align: center;
+  padding-top: 150px;
+  position: relative;
+}
+
+h1:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -25px;/*線の上下位置*/
+  display: inline-block;
+  width: 80px;/*線の長さ*/
+  height: 2px;/*線の太さ*/
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);/*位置調整*/
+  background-color: #333333;/*線の色*/
+}
+
+.about_text {
+  text-align: center;
+  padding-top: 80px;
+  font-size: 20px;
+  line-height: 50px;
+  padding-bottom: 150px;
+}
+
+.f-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 100px;
+  padding-bottom: 130px;
+  }
+
+.item-title{
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-align: center;
+  padding: 20px;
+  margin: auto;
+  background-color: #f9f7f2;
+  position: relative;
+}
+
+.f-item{
+  flex-basis:21%;
+  margin-right: 30px;
+  margin-left: 30px;
+  font-size: 16px;
+  padding-bottom: 70px;
+  font-weight: bold;
+  text-align: left;
+  letter-spacing: 0.5px;
+}
+
+.sample1{
+margin-top: 30px;
+}
+
+.sample2{
+  font-size: 15px;
+  font-weight: lighter;
+  line-height: 30px;
+}
+
+.layer-img{
+  width: 350px;
+  height: auto;
+  left: -5px;
+  top: -70px;
+  position: absolute;
+}
+
+.layer2-img{
+  width: 300px;
+  height: auto;
+  position: absolute;
+  right: 25px;
+  bottom: -120px;
+}
+
+.layer3-img{
+  width: 100px;
+  height: auto;
+  position: absolute;
+  right: 300px;
+  bottom: -60px;
+}
+
+.access {
+  width: 1040px;
+  margin: 0 auto;
+  height: 900px;
+}
+
+.access iframe {
+  width: 100%;
+  height: 440px;
+  padding-top: 90px;
+  padding-left: 45px;
+  aspect-ratio: 1/1;
+  filter: grayscale(100%);
+  display: inline-block;
+  border: none;
+}
+
+.access_map{
+  float: left;
+}
+
+.access_address{
+  float: right;
+  padding-top: 140px;
+  margin-right: 100px;
+}
+
+.address1{
+  font-size: 17.0px;
+  font-weight: bold;
+  line-height: 60px;
+  letter-spacing: 2px;
+}
+
+.address2{
+  font-size: 15.7px;
+  font-weight: lighter;
+  line-height: 35px;
+}
+
+.address3{
+  font-size: 15.7px;
+  font-weight: lighter;
+  line-height: 35px;
+  padding-top: 27px;
+}
+
+footer{
+  position: relative;
+  width: 100%;
+  height: 70px;
+  background-color: #f9f7f2;
+  bottom: 0;
+}
+
+.footer_text{
+  position: absolute;
+  font-size: 16.0px;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  top: 50%;
+  left: 50%; 
+  transform: translateY(-50%) translateX(-50%);
+}
+
+@media (max-width:768px) {
+
+  .pc {
+    display: none;
+  }
+
+  #hamburger {
+    background-color: #ffffff;  /*透明の背景*/
+    position: relative;             /*ハンバーガーの横線の位置を決めるための基準*/
+    cursor: pointer;                /*リンクを示すカーソルを表示（指差しマーク）*/
+    margin: 0 0 0 auto;             /*左側に余白を作り、ハンバーガーメニューを右端に配置*/
+    height: 60px;                   /*ヘッダーの高さと同じ60px*/
+    width: 60px;
+    padding-right: 30px;
+    padding-top: 30px;                  /*高さと同じ幅*/
+  }
+
+  .icon span {
+    position: absolute;       /*親要素である#hamburgerを基準に位置を指定*/
+    left: 15px;               /*#hamburger内の左がら15pxに横線を配置（幅が60pxなので右からも15px）*/
+    width: 30px;              /*横線の幅が30px*/
+    height: 4px;              /*横線の高さが4px*/
+    background-color: #333333;  /*横線を白色*/
+    border-radius: 8px;       /*横線の両端の角に丸みを持たせる*/
+    transition: ease 0.75s;   /*変化の時間（easeは初期値）*/
+  }
+
+  .icon span:nth-of-type(1) {
+    top: 35px;
+  }
+  .icon span:nth-of-type(2) {
+    top: 50px;
+  }
+  .icon span:nth-of-type(3) {
+    bottom: 20px;
+  }
+
+  .close span:nth-of-type(1) {
+    transform: rotate(45deg); /*反時計回りに45度回転*/
+    top: 50px;
+  }
+
+  .close span:nth-of-type(2) {
+    opacity: 0;
+  }
+
+  .close span:nth-of-type(3) {
+      transform: rotate(-45deg); /*時計回りに45度回転*/
+      top: 50px;
+  }
+
+  .sm {
+    top: 115px;  /*headerの余白分*/
+    left: 0px;  /*headerの余白分　ヘッダーには左右に15px余白があるので、headerの子要素となる.smは15px分内側に設置されます。その余白を埋めるために左に寄せる。*/
+    position: absolute; /*絶対配置　top　leftからの位置を絶対配置する*/
+    z-index: 10;
+    width: 100%;
+    background-color: #ffffff;
+  }
+
+  ul {
+    flex-direction: column;
+    font-size: 30px;
+  }
+
+  a {
+    text-align: center;	/*メニューリストの文字を中央寄せ*/
+    margin: 30px;
+    letter-spacing: 0.10em;
+  }
+
+  header {
+    height: 120px;
+  }
+
+  .logo {
+    font-size: 50px;
+    padding-top: 0px;
+  }
+
+  .pc_back img{
+    display: none;
+  }
+
+  .sp_back img{
+    display: block;
+  }
+
+  h1{
+    font-size: 50px;
+    letter-spacing: 0.08em;
+  }
+  
+  h1:before {
+    bottom: -40px;
+    width: 110px;/*線の長さ*/
+    height: 4px;/*線の太さ*/
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);/*位置調整*/
+    background-color:#333333;/*線の色*/
+  }
+
+  .about_text {
+    text-align: center;
+    padding-top: 100px;
+    font-size: 40px;
+    margin-right: 50px;
+    margin-left: 50px;
+    letter-spacing: 0.06em;
+    line-height: 80px;
+    padding-bottom: 150px;
+  }
+
+  .f-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 100px;
+    padding-bottom: 130px;
+    }
+
+  .f-item img{
+    width: 900px;
+    margin-bottom: 60px;
+  }
+
+  .f-item{
+    font-size: 45px;
+    margin-top: 40px;
+    margin-right: 30px;
+    margin-left: 45px;
+  }
+
+  .sample2{
+    font-size: 40px;
+    line-height: 70px;
+  }
+
+  .layer-img{
+    width: 440px;
+    left: -5px;
+    top: -150px;
+  }
+
+  .layer2-img{
+    width: 400px;
+    right: 25px;
+    bottom: -80px;
+  }
+
+  .layer3-img{
+    width: 130px;
+    right: 400px;
+    bottom: -10px;
+  }
+
+  .access {
+    margin-bottom: 40px;
+  }
+
+  .access_map {
+    width: 89%;
+    position: relative;
+    padding-top: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .access iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .access_address{
+    float: left;
+    margin-left: 53px;
+  }
+
+  .address1{
+    font-size: 45.0px;
+    font-weight: bold;
+    line-height: 60px;
+    letter-spacing: 2px;
+    margin-top: 20px;
+  }
+
+  .address2{
+    font-size: 43px;
+    font-weight: lighter;
+    line-height: 80px;
+    margin-top: 40px;
+  }
+
+  .address3{
+    font-size: 43px;
+    font-weight: lighter;
+    line-height: 80px;
+    margin-top: 40px;
+    margin-bottom: 250px;
+  }
+
+  footer{
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    background-color: #f9f7f2;
+    bottom: 0;
+  }
+
+
+}
+
+/* ===============作業エリア */

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CAFE TOKYO</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="index.css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <a href="#"> CAFE TOKYO </a>
+      </div>
+
+      <div id="hamburger">
+        <div class="icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <nav class="sm">
+        <ul>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">MENU</a></li>
+          <li><a href="#">ACCESS</a></li>
+        </ul>
+      </nav>
+
+      <nav class="pc">
+        <ul>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">MENU</a></li>
+          <li><a href="#">ACCESS</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+      $("#hamburger").on("click", function () {
+        $(".icon").toggleClass("close");
+        $(".sm").slideToggle();
+      });
+    </script>
+
+    <p class="pc_back">
+      <img src="img/back.png" />
+    </p>
+
+    <p class="sp_back">
+      <img src="img/SP_back.png" />
+    </p>
+
+    <h1>ABOUT</h1>
+
+    <p class="about_text">
+      テキストが入りますテキストが入ります<br />
+      テキストが入りますテキストが入りますテキストが入りますテキストが入ります<br />
+      テキストが入りますテキストが入りますテキストが入ります<br />
+      テキストが入りますテキストが入ります<br />
+    </p>
+
+    <div class="item-title">
+      <h1>MENU</h1>
+
+      <img src="img/sample7.png" alt="" class="layer-img" />
+      <img src="img/sample8.png" alt="" class="layer2-img" />
+      <img src="img/sample9.png" alt="" class="layer3-img" />
+
+      <div class="f-container">
+        <div class="f-item">
+          <img src="img/sample1.png" />
+          <p class="sample1">メニュー名</p>
+          <p class="sample2">
+            <br />テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
+          </p>
+        </div>
+
+        <div class="f-item">
+          <img src="img/sample2.png" />
+          <p class="sample1">メニュー名</p>
+          <p class="sample2">
+            <br />テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
+          </p>
+        </div>
+
+        <div class="f-item">
+          <img src="img/sample3.png" />
+          <p class="sample1">メニュー名</p>
+          <p class="sample2">
+            <br />テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
+          </p>
+        </div>
+
+        <div class="f-item">
+          <img src="img/sample4.png" />
+          <p class="sample1">メニュー名</p>
+          <p class="sample2">
+            <br />テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
+          </p>
+        </div>
+
+        <div class="f-item">
+          <img src="img/sample5.png" />
+          <p class="sample1">メニュー名</p>
+          <p class="sample2">
+            <br />テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
+          </p>
+        </div>
+
+        <div class="f-item">
+          <img src="img/sample6.png" />
+          <p class="sample1">メニュー名</p>
+          <p class="sample2">
+            <br />テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="access">
+      <h1>ACCESS</h1>
+
+      <div class="access_box">
+        <div class="access_map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3242.118403402805!2d139.7082093151533!3d35.64945433932173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b6b0afc77ab%3A0x70ad6644bf2d274a!2z5qCq5byP5Lya56S-44Kv44O844K344O8!5e0!3m2!1sja!2sjp!4v1661413523164!5m2!1sja!2sjp"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+
+        <div class="access_address">
+          <p class="address1">CAFE TOKYO</p>
+          <p class="address2">
+            〒150-0011<br />東京都渋谷区東3-16-3エフ・ニッセイ恵比寿ビル
+          </p>
+          <p class="address3">
+            TEL: 03-5766-6095<br />
+            営業時間 : 月〜土 11:00〜23:30、日 11:00〜23:00<br />
+            ※ランチタイムは11:00〜16:00 (L.O.15:00)<br />
+            定休日　 : 無休 (休養日除く)<br />
+            最寄り駅 : 恵比寿駅から徒歩5分
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p class="footer_text">©︎ CAFETOKYO</p>
+    </footer>
+  </body>
+</html>
