@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <title>CAFE TOKYO</title>
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="index.css" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <script src="jquery-3.6.0.min.js"></script>
   </head>
 
   <body>
+
     <header>
       <div class="logo">
-        <a href="#"> CAFE TOKYO </a>
+        <h1><a href="#">CAFE TOKYO</a></h1>
       </div>
 
       <div id="hamburger">
@@ -24,22 +26,21 @@
 
       <nav class="sm">
         <ul>
-          <li><a href="#">ABOUT</a></li>
-          <li><a href="#">MENU</a></li>
-          <li><a href="#">ACCESS</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#menu">MENU</a></li>
+          <li><a href="#access">ACCESS</a></li>
         </ul>
       </nav>
 
       <nav class="pc">
         <ul>
-          <li><a href="#">ABOUT</a></li>
-          <li><a href="#">MENU</a></li>
-          <li><a href="#">ACCESS</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#menu">MENU</a></li>
+          <li><a href="#access">ACCESS</a></li>
         </ul>
       </nav>
     </header>
 
-    <script src="jquery-3.6.0.min.js"></script>
     <script>
       $("#hamburger").on("click", function () {
         $(".icon").toggleClass("close");
@@ -47,83 +48,79 @@
       });
     </script>
 
-    <p class="pc_back">
-      <img src="img/back.png" />
-    </p>
+    <div class="pc_back">
+      <img src="img/back.png"/>
+    </div>
 
-    <p class="sp_back">
-      <img src="img/SP_back.png" />
-    </p>
+    <div class="sp_back">
+      <img src="img/SP_back.png"/>
+    </div>
 
-    <h1>ABOUT</h1>
+    <h2 id="about">ABOUT</h2>
 
     <p class="about_text">
-      テキストが入りますテキストが入ります<br />
-      テキストが入りますテキストが入りますテキストが入りますテキストが入ります<br />
-      テキストが入りますテキストが入りますテキストが入ります<br />
-      テキストが入りますテキストが入ります<br />
+      テキストが入りますテキストが入ります<br>
+      テキストが入りますテキストが入りますテキストが入りますテキストが入ります<br>
+      テキストが入りますテキストが入りますテキストが入ります<br>
+      テキストが入りますテキストが入ります<br>
     </p>
 
     <div class="item-title">
-      <h1>MENU</h1>
-
-      <img src="img/sample7.png" alt="" class="layer-img" />
-      <img src="img/sample8.png" alt="" class="layer2-img" />
-      <img src="img/sample9.png" alt="" class="layer3-img" />
+      <h2 id="menu">MENU</h2>
 
       <div class="f-container">
         <div class="f-item">
-          <img src="img/sample1.png" />
+          <img src="img/sample1.png" alt=”フランスパン”>
           <p class="sample1">メニュー名</p>
           <p class="sample2">
-            <br />テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
+            テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
           </p>
         </div>
 
         <div class="f-item">
-          <img src="img/sample2.png" />
+          <img src="img/sample2.png" alt=”フレンチサラダ”>
           <p class="sample1">メニュー名</p>
           <p class="sample2">
-            <br />テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
+            テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
           </p>
         </div>
 
         <div class="f-item">
-          <img src="img/sample3.png" />
+          <img src="img/sample3.png" alt=”スープ”>
           <p class="sample1">メニュー名</p>
           <p class="sample2">
-            <br />テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
+            テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
           </p>
         </div>
 
         <div class="f-item">
-          <img src="img/sample4.png" />
+          <img src="img/sample4.png" alt=”ストロベリーとブルーベリーのケーキ”>
           <p class="sample1">メニュー名</p>
           <p class="sample2">
-            <br />テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
+            テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
           </p>
         </div>
 
         <div class="f-item">
-          <img src="img/sample5.png" />
+          <img src="img/sample5.png" alt=”パンケーキ”>
           <p class="sample1">メニュー名</p>
           <p class="sample2">
-            <br />テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
+            テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
           </p>
         </div>
 
         <div class="f-item">
-          <img src="img/sample6.png" />
+          <img src="img/sample6.png" alt=”まもなく登場予定のメニュー”>
           <p class="sample1">メニュー名</p>
           <p class="sample2">
-            <br />テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
+            テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
           </p>
         </div>
       </div>
     </div>
 
     <div class="access">
-      <h1>ACCESS</h1>
+      <h2 id="access">ACCESS</h2>
 
       <div class="access_box">
         <div class="access_map">
@@ -132,20 +129,20 @@
             style="border: 0"
             allowfullscreen=""
             loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
         </div>
 
         <div class="access_address">
           <p class="address1">CAFE TOKYO</p>
           <p class="address2">
-            〒150-0011<br />東京都渋谷区東3-16-3エフ・ニッセイ恵比寿ビル
+            〒150-0011<br>東京都渋谷区東3-16-3エフ・ニッセイ恵比寿ビル
           </p>
           <p class="address3">
-            TEL: 03-5766-6095<br />
-            営業時間 : 月〜土 11:00〜23:30、日 11:00〜23:00<br />
-            ※ランチタイムは11:00〜16:00 (L.O.15:00)<br />
-            定休日　 : 無休 (休養日除く)<br />
+            TEL: 03-5766-6095<br>
+            営業時間 : 月〜土 11:00〜23:30、日 11:00〜23:00<br>
+            ※ランチタイムは11:00〜16:00 (L.O.15:00)<br>
+            定休日　 : 無休 (休養日除く)<br>
             最寄り駅 : 恵比寿駅から徒歩5分
           </p>
         </div>
@@ -153,7 +150,7 @@
     </div>
 
     <footer>
-      <p class="footer_text">©︎ CAFETOKYO</p>
+      <p class="footer_text">&copy; CAFETOKYO</p>
     </footer>
   </body>
 </html>
