@@ -1,8 +1,8 @@
 # 「CAFETOKYO」という架空のお店のサイト制作
 
-デザイナーさんからいただいたデザインカンプをもとにコーディング(HTML・CSS・jQuery)
+* デザイナーさんからいただいたデザインカンプをもとにコーディング(HTML・CSS・jQuery)
 
-レスポンシブ対応済み
+* レスポンシブ対応済み
 
 # DEMO
 
@@ -14,8 +14,8 @@
 
 # Features
 
-「ACCESS」では、GoogleMapsAPIを使用。
-デザインカンプ通りに作る難しさを実感した。
+* 「ACCESS」では、GoogleMapsAPIを使用。
+* デザインカンプ通りにコーディングする大変さを実感した。
 
 # Requirement
 
